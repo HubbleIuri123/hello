@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="icon" type="image/x-icon" href="IM-DESIGNER---Foto-de-Perfil.png">
+    <title>IM DESIGNER</title>
+</head>
+<body>
+    <header>
+        <img src="IM-DESIGNER---Foto-de-Perfil.png" alt="Logo do IM DESIGNER"  width="50" height="50">
+        <p>IM DESIGNER</p>
+        <nav>
+            <ul>
+                <li><a href="inicio.html" class="menu">Cubagem</a></li>
+                <li><a href="oqueehcubar.html" class="menu">O que é cubar?</a></li>
+                <li><a href="tutorial.html" class="menu">Tutorial</a></li>
+              </ul>
+        </nav>
+    </header>
+    <div class="bolota"></div>
+
+    <section class="sec1">
+        <h1 class="titulo">CUBAGEM</h1>
+        <p>Insira suas medidas em metros (m), em cada um dos lados abaixo.</p>
+        
+    </section>
+
+    <section class="sec2">
+        <div class="quadrado"></div>
+        <input type="text" class="textbox top" placeholder="FRENTE">
+        <input type="text" class="textbox bottom" placeholder="FUNDO">
+        <input type="text" class="textbox left" placeholder="DIREITA">
+        <input type="text" class="textbox right" placeholder="ESQUERDA">
+    </section>
+
+    <section class="sec22">
+        <p>INSIRA UM VALOR EM (R$)</p>
+        <div>
+            <input type="text" class="valorAlqueire" placeholder="Valor por alqueire">
+        </div>
+    </section>
+
+    <section class="sec3">
+        <div class="botoes">
+            <button onclick="calcular('metro')">METRO</button>
+            <button onclick="calcular('braca')">BRAÇA</button>
+            <button onclick="novaMedida()">ADICIONAR MEDIDA</button>
+        </div>
+    </section>
+
+    <section class="sec4">
+        <p>RESULTADOS</p>
+        <button onclick="limpar()"><img src="lixeira.png" alt="ícone de lixeira" width="20" height="20"> LIMPAR TUDO</button>
+        <div class="info"></div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 IM DESIGNER. Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="calcular.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46, 102, 255);
+    font-family: 'EudoxusSans-Regular';
+    width: 100%;
+}
+
+/* ===== FONTS ===== */
+@font-face {
+    font-family: 'EudoxusSans-Regular';
+    src: url('EudoxusSans-Regular-BF659b6cb1d4714.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'EudoxusSans-Bold';
+    src: url('EudoxusSans-Bold-BF659b6cb1408e5.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EudoxusSans-Light';
+    src: url('EudoxusSans-Light-BF659b6cb2036b5.ttf') format('truetype');
+    font-weight: normal;
+}
+/* ________________________________________________________________________________________________________ */
+
+header {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.034);
+    padding:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ffffff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+}
+header p {
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'EudoxusSans-Bold';
+}
+
+nav {
+    width: 100%;
+}
+ul {
+    padding-left: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.menu {
+    text-decoration: none;
+    color: #57568a;
+    font-weight: bold;
+    position: relative;
+}
+
+.bolota {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background-color: #0000002a; /* Cor da esfera */
+    border-radius: 100%; /* Faz o círculo */
+    top: -200px; /* Posição da esfera */
+    left: -250px;
+    transform: translate(-50%, -20%); /* Centraliza a esfera */
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
+
+.sec1 {
+    text-align: center;
+    padding: 30px;
+    max-width: 940px;
+    margin: auto;
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 50px;
+}
+
+.sec1 .titulo {
+    font-family: 'EudoxusSans-Bold';
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.sec1 p {
+    margin-top: 0;
+}
